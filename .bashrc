@@ -17,4 +17,4 @@ alias shutdown='shutdown -P -h'
 PS1='[\u@\h \W]\$ '
 
 ##System Information in Terminal
-neofetch
+neofetch --color_blocks off
