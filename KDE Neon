@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo virsh start kde-neon
+sudo virt-viewer --wait --connect qemu:///system kde-neon
+ 
