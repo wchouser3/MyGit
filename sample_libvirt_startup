@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo virsh start machinename &&
-sudo virt-viewer --wait --connect qemu:///system machinename
+virsh start machinename &&
+virt-viewer --wait --connect qemu:///system machinename
