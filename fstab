@@ -1,0 +1,22 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/nvme0n1p2 during installation
+UUID=ba7d9619-69c6-4930-93bd-1b4faccf1c70 /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/nvme0n1p1 during installation
+UUID=34C3-D9F6  /boot/efi       vfat    umask=0077      0       1
+#/swapfile                                 none            swap    sw              0       0
+# btrfs on /pool
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /pool                       btrfs    defaults,noatime,compress=zstd,autodefrag                                 0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Production  btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Production  0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Bittorrent  btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Bittorrent  0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Documents   btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Documents   0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Music       btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Music       0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Nextcloud   btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Nextcloud   0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Pictures    btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Pictures    0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Videos      btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Videos      0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Downloads   btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Downloads   0  0
