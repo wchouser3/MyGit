@@ -1,4 +1,4 @@
 #!/bin/bash
-virsh start <machinename> &&
+virsh -c qemu:///system start <machinename> &&
 virt-viewer --wait --attach --connect qemu:///system <machinename>
 ##Replace <machinename> with name of virtual machine##
