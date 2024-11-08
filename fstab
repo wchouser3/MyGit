@@ -11,12 +11,12 @@ UUID=ba7d9619-69c6-4930-93bd-1b4faccf1c70 /               ext4    errors=remount
 UUID=34C3-D9F6  /boot/efi       vfat    umask=0077      0       1
 #/swapfile                                 none            swap    sw              0       0
 # btrfs on /pool
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /pool                       btrfs    defaults,noatime,compress=zstd,autodefrag                                 0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Production  btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Production  0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Bittorrent  btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Bittorrent  0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Documents   btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Documents   0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Music       btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Music       0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Nextcloud   btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Nextcloud   0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Pictures    btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Pictures    0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Videos      btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Videos      0  0
-UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Downloads   btrfs    defaults,noatime,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Downloads   0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /pool                       btrfs    rw,relatime,space_cache=v2,compress=zstd,autodefrag                                 0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Production  btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Production  0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Bittorrent  btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Bittorrent  0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Documents   btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Documents   0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Music       btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Music       0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Nextcloud   btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Nextcloud   0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Pictures    btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Pictures    0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Videos      btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Videos      0  0
+UUID=d399abe2-c3a7-4041-a17e-8fd7c312b3df  /home/wchouser3/Downloads   btrfs    rw,relatime,space_cache=v2,autodefrag,compress=zstd,x-gvfs-hide,subvol=@Downloads   0  0
